@@ -1,0 +1,39 @@
+@import 'bootstrap/dist/css/bootstrap.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #fff;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* @layer base { 
+  h1 {
+    @apply text-6xl font-bold;
+  }
+
+  h2 {
+    @apply text-5xl font-bold;
+  }
+
+  h3 {
+    @apply text-2xl font-bold;
+  }
+  a.active,a.focus{
+    @apply bg-primary text-white
+  }
+} */
+
+@layer components{
+  .card{
+    @apply w-full hover:-translate-y-1 transition-all md:w-[calc(50%_-_20px)] lg:w-[calc(25%_-_20px)] flex flex-col gap-y-4 h-52 rounded-lg drop-shadow-md hover:drop-shadow-lg
+  }
+  .backdrops{
+    @apply bg-white/30 backdrop-blur-2xl backdrop-filter
+  }
+}
