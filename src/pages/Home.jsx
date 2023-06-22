@@ -4,9 +4,9 @@ import GlobalRechargeDay from '../components/GlobalRechargeDay'
 
 const Home = () => {
   return (
-    <section className='h-100 min-vh-100 lg:h-screen d-flex flex-column justify-content-center bg-gradient-to-br from-slate-300 via-gray-200 to-zinc-500'>
-      <div className='w-full flex justify-end p-2'>
-        <select name="country" id="select-country" className='w-3/4 md:w-2/4 lg:w-1/4 active:ring-0 rounded-lg p-2'>
+    <section className='h-100 min-vh-100 lg:h-screen d-flex flex-column justify-content-center bg-dark-subtle  bg-gradient '>
+      <div className='w-100 d-flex justify-content-end p-2'>
+        <select name="country" id="select-country" className='col-10 col-md-5 col-lg-4 p-2'>
           <option disabled placeholder='Select Country'>
             Select Country
           </option>
@@ -15,7 +15,7 @@ const Home = () => {
           <option value="Netherland"> Netherland </option>
         </select>
       </div>
-      <div className="flex flex-col gap-y-5">
+      <div className="d-flex flex-column row-gap-4 ">
         <UpcomingHolidays />
         <GlobalRechargeDay />
       </div>
