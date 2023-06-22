@@ -29,11 +29,23 @@ body {
   }
 } */
 
-@layer components{
+/* @layer components{
   .card{
     @apply w-full hover:-translate-y-1 transition-all md:w-[calc(50%_-_20px)] lg:w-[calc(25%_-_20px)] flex flex-col gap-y-4 h-52 rounded-lg drop-shadow-md hover:drop-shadow-lg
   }
   .backdrops{
     @apply bg-white/30 backdrop-blur-2xl backdrop-filter
   }
-}
+} */
+/* .card{
+  backdrop-filter: blur(16px) saturate(200%);
+  -webkit-backdrop-filter: blur(16px) saturate(200%);
+  background-color: rgba(143, 149, 154, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+} */
+/* .glass{
+  filter: blur(2px);
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.041)! important; 
+} */

@@ -2,57 +2,33 @@ import React from 'react'
 
 const UpcomingHolidays = () => {
     return (
-        <section className='w-full flex flex-col px-2 gap-y-2'>
+        <section className='w-100 d-flex flex-column px-2 column-gap-2 '>
             <h3>
                 Upcoming
             </h3>
-            <div className='flex flex-col md:flex-row justify-around items-center w-full flex-wrap gap-x-1 gap-y-4 lg:gap-y-0'>
-                <div className="w-full hover:-translate-y-1 transition-all md:w-[calc(50%_-_20px)] lg:w-[calc(25%_-_20px)] flex flex-col gap-y-4 h-52 bg-white/30 backdrop-blur-2xl backdrop-filter rounded-lg drop-shadow-md hover:drop-shadow-lg">
-                    <header className='rounded-lg py-1 px-1'>
-                        <h4 className='bg-white px-2 rounded-t-lg py-2 '>
-                            Independance Day
-                        </h4>
-                    </header>
-                    <div className='h-10 text-center'>
-                        <h3>
-                            July 4-6
-                        </h3>
+            <div className='row d-flex flex-column flex-md-row justify-content-around align-items-center w-100 '>
+                <div class="card col-12 col-md-6 col-lg-3 text-bg-light mb-3" style={{maxWidth:"18rem", height:"10rem"}}>
+                    <h3 class="card-header">Independence Day</h3>
+                    <div class="card-body">
+                        <h4 class="card-title text-center ">July 14-16</h4>
                     </div>
                 </div>
-                <div className="w-full hover:-translate-y-1 transition-all md:w-[calc(50%_-_20px)] lg:w-[calc(25%_-_20px)] flex flex-col gap-y-4 h-52 bg-white/30 backdrop-blur-2xl backdrop-filter rounded-lg drop-shadow-md hover:drop-shadow-lg">
-                    <header className='rounded-lg py-1 px-1'>
-                        <h4 className='bg-white px-2 rounded-t-lg py-2 '>
-                            Independance Day
-                        </h4>
-                    </header>
-                    <div className='h-10 text-center'>
-                        <h3>
-                            July 4-6
-                        </h3>
+                <div class="card col-12 col-md-6 col-lg-3 text-bg-light mb-3" style={{maxWidth:"18rem", height:"10rem"}}>
+                    <h3 class="card-header">Independence Day</h3>
+                    <div class="card-body">
+                        <h4 class="card-title text-center ">July 14-16</h4>
                     </div>
                 </div>
-                <div className="w-full hover:-translate-y-1 transition-all md:w-[calc(50%_-_20px)] lg:w-[calc(25%_-_20px)] flex flex-col gap-y-4 h-52 bg-white/30 backdrop-blur-2xl backdrop-filter rounded-lg drop-shadow-md hover:drop-shadow-lg">
-                    <header className='rounded-lg py-1 px-1'>
-                        <h4 className='bg-white px-2 rounded-t-lg py-2 '>
-                            Independance Day
-                        </h4>
-                    </header>
-                    <div className='h-10 text-center'>
-                        <h3>
-                            July 4-6
-                        </h3>
+                <div class="card col-12 col-md-6 col-lg-3 text-bg-light mb-3" style={{maxWidth:"18rem", height:"10rem"}}>
+                    <h3 class="card-header">Independence Day</h3>
+                    <div class="card-body">
+                        <h4 class="card-title text-center ">July 14-16</h4>
                     </div>
                 </div>
-                <div className="w-full hover:-translate-y-1 transition-all md:w-[calc(50%_-_20px)] lg:w-[calc(25%_-_20px)] flex flex-col gap-y-4 h-52 bg-white/30 backdrop-blur-2xl backdrop-filter rounded-lg drop-shadow-md hover:drop-shadow-lg">
-                    <header className='rounded-lg py-1 px-1'>
-                        <h4 className='bg-white px-2 rounded-t-lg py-2 '>
-                            Independance Day
-                        </h4>
-                    </header>
-                    <div className='h-10 text-center'>
-                        <h3>
-                            July 4-6
-                        </h3>
+                <div class="card col-12 col-md-6 col-lg-3 text-bg-light mb-3" style={{maxWidth:"18rem", height:"10rem"}}>
+                    <h3 class="card-header">Independence Day</h3>
+                    <div class="card-body">
+                        <h4 class="card-title text-center ">July 14-16</h4>
                     </div>
                 </div>
             </div>
