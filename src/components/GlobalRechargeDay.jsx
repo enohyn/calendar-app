@@ -2,33 +2,41 @@ import React from 'react'
 
 const GlobalRechargeDay = () => {
     return (
-        <section className='w-100 d-flex flex-column px-2 gap-2  '>
+        <section className='w-100 d-flex flex-column px-2 gap-2 '>
             <h3>
-                Global Recharge Day
+                Upcoming Holidays
             </h3>
-            <div className='row d-flex flex-column flex-md-row justify-content-around align-items-center w-100 px-3'>
-                <div class="card col-12 col-md-6 col-lg-3 text-bg-light mb-3" style={{maxWidth:"18rem", height:"10rem"}}>
-                    <h3 class="card-header">Independence Day</h3>
-                    <div class="card-body">
-                        <h4 class="card-title text-center ">July 14-16</h4>
+            <div className='row d-flex flex-column flex-md-row justify-content-between align-items-center px-4'>
+                <div className="px-lg-4 px-md-2 col-12 col-md-6 col-lg-3">
+                    <div class="card text-bg-light mb-3" style={{ height: "10rem" }}>
+                        <h3 class="card-header">Independence Day</h3>
+                        <div class="card-body">
+                            <h4 class="card-title text-center ">July 14-16</h4>
+                        </div>
                     </div>
                 </div>
-                <div class="card col-12 col-md-6 col-lg-3 text-bg-light mb-3" style={{maxWidth:"18rem", height:"10rem"}}>
-                    <h3 class="card-header">Independence Day</h3>
-                    <div class="card-body">
-                        <h4 class="card-title text-center ">July 14-16</h4>
+                <div className="px-lg-4 px-md-2 col-12 col-md-6 col-lg-3">
+                    <div class="card text-bg-light mb-3" style={{ height: "10rem" }}>
+                        <h3 class="card-header">Independence Day</h3>
+                        <div class="card-body">
+                            <h4 class="card-title text-center ">July 14-16</h4>
+                        </div>
                     </div>
                 </div>
-                <div class="card col-12 col-md-6 col-lg-3 text-bg-light mb-3" style={{maxWidth:"18rem", height:"10rem"}}>
-                    <h3 class="card-header">Independence Day</h3>
-                    <div class="card-body">
-                        <h4 class="card-title text-center ">July 14-16</h4>
+                <div className="px-lg-4 px-md-2 col-12 col-md-6 col-lg-3">
+                    <div class="card text-bg-light mb-3" style={{ height: "10rem" }}>
+                        <h3 class="card-header">Independence Day</h3>
+                        <div class="card-body">
+                            <h4 class="card-title text-center ">July 14-16</h4>
+                        </div>
                     </div>
                 </div>
-                <div class="card col-12 col-md-6 col-lg-3 text-bg-light mb-3" style={{maxWidth:"18rem", height:"10rem"}}>
-                    <h3 class="card-header">Independence Day</h3>
-                    <div class="card-body">
-                        <h4 class="card-title text-center ">July 14-16</h4>
+                <div className="px-lg-4 px-md-2 col-12 col-md-6 col-lg-3">
+                    <div class="card text-bg-light mb-3" style={{ height: "10rem" }}>
+                        <h3 class="card-header">Independence Day</h3>
+                        <div class="card-body">
+                            <h4 class="card-title text-center ">July 14-16</h4>
+                        </div>
                     </div>
                 </div>
             </div>
