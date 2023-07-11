@@ -3,7 +3,7 @@ import React from 'react'
 const UpcomingHolidays = () => {
     return (
         <section className='w-100 d-flex flex-column px-2 gap-2 '>
-            <h3>
+            <h3 className='px-2'>
                 Upcoming Holidays
             </h3>
             <div className='row d-flex flex-column flex-md-row justify-content-between align-items-center px-4'>
