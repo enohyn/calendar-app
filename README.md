@@ -1,10 +1,15 @@
-# Getting Started with Create React App
+# calendar-app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). -->
+This calendar-app is a protoype shows the upcoming holidays and periodic holidays that's given to employees which is named as Global Recharge Day. Filtered through different regions company are situated.
 
 ## Available Scripts
 
 In the project directory, you can run:
+
+### `npm install`
+
+Install every dependencies used to build this app
 
 ### `npm start`
 
@@ -38,6 +43,8 @@ If you aren't satisfied with the build tool and configuration choices, you can `
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## `npx json-server --watch db.json --port 8000`
 
 ## Learn More
 
