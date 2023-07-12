@@ -4,13 +4,25 @@ import GlobalRechargeDay from '../components/GlobalRechargeDay'
 import axios from 'axios'
 
 const Home = () => {
-  const [country, setCountry] = useState({});
-  const[apiData, setData] = useState({});
+  const [country, setCountry] = useState("USA");
+  const [holiday, setHoliday] = useState({});
   const handleSelectValue = (event) => {
     setCountry(event.target.value)
   }
+  // await axios.get(`http://localhost:8000/${country}`).then((res) => {setData(res.data) }).catch((err) => console.log(err))
+  const handleData = async () => {
+    try {
+      const response = await axios.get(`http://localhost:8000/countries`)
+      const upcomingHolidays = response.data;
+      setHoliday(upcomingHolidays.USA.UpcomingHoliday)
+      console.log(holiday)
+    }
+    catch (error) {
+      console.log(error)
+    }
+  }
   useEffect(() => {
-    let handleData = axios.get(`http://localhost:8000/${country}`).then((res) => {setData(res.data) }).catch((err) => console.log(err))
+    handleData();
   }, [country])
 
 
@@ -20,6 +32,7 @@ const Home = () => {
         <select name="country" id="select-country" className='col-10 col-md-5 col-lg-4 p-2' value={country} onChange={handleSelectValue} >
           <option disabled selected placeholder='Select Country' >
             Select Country
+
           </option>
           <option value="USA"> USA </option>
           <option value="Bangladesh"> Bangladesh </option>
@@ -27,7 +40,7 @@ const Home = () => {
         </select>
       </div>
       <div className="d-flex flex-column row-gap-4 ">
-        <UpcomingHolidays countries={country} />
+        <UpcomingHolidays holidays={holiday} />
         <GlobalRechargeDay countries={country} />
       </div>
     </section>

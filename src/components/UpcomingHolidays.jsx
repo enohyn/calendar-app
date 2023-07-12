@@ -1,17 +1,6 @@
-import React, { useState,useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 
-const UpcomingHolidays = ({countries}) => {
-    const [holidays, setHolidays]=useState({})
-    
-    const handleHolidays=(countries)=>{
-        setHolidays(countries)
-        console.log(holidays)
-    }
-
-    useEffect(() => {
-       handleHolidays();
-    }, [holidays])
-    
+const UpcomingHolidays = ({holidays}) => {
 
     return (
         <section className='w-100 d-flex flex-column px-2 gap-2 '>
