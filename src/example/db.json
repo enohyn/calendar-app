@@ -26,22 +26,22 @@
       "GlobalRecharge": [
         {
           "id": 1,
-          "title": "Independence Day",
+          "title": "First Quarter",
           "duration": "July 4th"
         },
         {
           "id": 2,
-          "title": "Thanksgiving ",
+          "title": "Second Quarter",
           "duration": "Nov 28th - 30th"
         },
         {
           "id": 3,
-          "title": "Christmass",
+          "title": "Third Quarter",
           "duration": "Dec 25th-28th"
         },
         {
           "id": 4,
-          "title": "New Year",
+          "title": "Fourth Quarter",
           "duration": "Jan 1st-3rd"
         }
       ]
@@ -72,22 +72,22 @@
       "GlobalRecharge": [
         {
           "id": 1,
-          "title": "Independence Day",
+          "title": "First Quarter",
           "duration": "July 4th"
         },
         {
           "id": 2,
-          "title": "Thanksgiving ",
+          "title": "Second Quarter",
           "duration": "Nov 28th - 30th"
         },
         {
           "id": 3,
-          "title": "Christmass",
+          "title": "Third Quarter",
           "duration": "Dec 25th-28th"
         },
         {
           "id": 4,
-          "title": "New Year",
+          "title": "Fourth Quarter",
           "duration": "Jan 1st-3rd"
         }
       ]
@@ -118,22 +118,22 @@
       "GlobalRecharge": [
         {
           "id": 1,
-          "title": "Independence Day",
+          "title": "First Quarter",
           "duration": "July 4th"
         },
         {
           "id": 2,
-          "title": "Thanksgiving ",
+          "title": "Second Quarter",
           "duration": "Nov 28th - 30th"
         },
         {
           "id": 3,
-          "title": "Christmass",
+          "title": "Third Quarter",
           "duration": "Dec 25th-28th"
         },
         {
           "id": 4,
-          "title": "New Year",
+          "title": "Fourth Quarter",
           "duration": "Jan 1st-3rd"
         }
       ]

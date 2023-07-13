@@ -2,11 +2,17 @@ import React, { useEffect, useState } from 'react'
 import UpcomingHolidays from '../components/UpcomingHolidays'
 import GlobalRechargeDay from '../components/GlobalRechargeDay'
 import axios from 'axios'
-
+import { FaSun } from 'react-icons/fa6';
 const Home = () => {
   const [country, setCountry] = useState("USA");
   const [upcomingHoliday, setUpcomingHoliday] = useState([]);
   const [rechargeDay, setRechargeDay] = useState([])
+
+  const [darkMode, setDarkMode]=useState(false)
+
+  const handleDarkMode = () =>{
+    setDarkMode(!darkMode)
+  }
 
   const handleSelectValue = async (event) => {
     setCountry(event.target.value)
@@ -33,7 +39,8 @@ const Home = () => {
 
   return (
     <section className='h-100 min-vh-100 lg:h-screen d-flex flex-column justify-content-center bg-dark-subtle  bg-gradient '>
-      <div className='w-100 d-flex justify-content-end p-2'>
+      <div className='w-100 d-flex justify-content-between p-2'>
+        <button className='px-3 py-2' onClick={handleDarkMode}> <FaSun  /> </button>
         <select name="country" id="select-country" className='col-10 col-md-5 col-lg-4 p-2' value={country} onChange={handleSelectValue} >
           <option disabled selected placeholder='Select Country' >
             Select Country
