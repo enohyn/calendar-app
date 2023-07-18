@@ -42,7 +42,7 @@ const Home = () => {
   return (
     <section data-bs-theme={`${ darkMode? 'dark' : 'light'}`} className={`h-100 min-vh-100 lg:h-screen d-flex flex-column justify-content-center  ${ darkMode? 'text-white bg-dark ' : 'text-dark bg-dark-subtle '} bg-gradient`}> 
       <div className='w-100 d-flex justify-content-between align-items-center p-2'>
-        <div onClick={handleDarkMode} className={`border-1 rounded-2 toggler d-flex align-items-center ${darkMode ? 'justify-content-start ': 'justify-content-end'}`} style={{width:'50px', maxHeight:'20px'}}>
+        <div onClick={handleDarkMode} className={`border-1 rounded-2 toggler d-flex align-items-center cursor-pointer  ${darkMode ? 'justify-content-start ': 'justify-content-end'}`} style={{width:'50px', maxHeight:'20px'}}>
           <button> {darkMode ? <HiMoon color='gray'  /> : <FaSun color='yellow' />} </button>
         </div>
         <select name="country" id="select-country" className='col-10 col-md-5 col-lg-4 p-2' value={country} onChange={handleSelectValue} >
