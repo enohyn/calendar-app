@@ -15,6 +15,14 @@ body {
 .toggler{
   transition: ease-in 2s linear;
 }
+.mask-custom-1 {
+  backdrop-filter: blur(15px);
+  background-color: rgba(255, 255, 255, .2);
+  border-radius: 3em;
+  border: 2px solid rgba(255, 255, 255, .1);
+  background-clip: padding-box;
+  box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
+}
 
 /* @layer base { 
   h1 {
