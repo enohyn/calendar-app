@@ -12,6 +12,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.toggler{
+  transition: ease-in 2s linear;
+}
+
 /* @layer base { 
   h1 {
     @apply text-6xl font-bold;

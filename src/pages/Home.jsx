@@ -3,14 +3,16 @@ import UpcomingHolidays from '../components/UpcomingHolidays'
 import GlobalRechargeDay from '../components/GlobalRechargeDay'
 import axios from 'axios'
 import { FaSun } from 'react-icons/fa6';
+import { HiMoon } from 'react-icons/hi';
+
 const Home = () => {
   const [country, setCountry] = useState("USA");
   const [upcomingHoliday, setUpcomingHoliday] = useState([]);
   const [rechargeDay, setRechargeDay] = useState([])
 
-  const [darkMode, setDarkMode]=useState(false)
+  const [darkMode, setDarkMode] = useState(false)
 
-  const handleDarkMode = () =>{
+  const handleDarkMode = () => {
     setDarkMode(!darkMode)
   }
 
@@ -38,9 +40,11 @@ const Home = () => {
 
 
   return (
-    <section className='h-100 min-vh-100 lg:h-screen d-flex flex-column justify-content-center bg-dark-subtle  bg-gradient '>
-      <div className='w-100 d-flex justify-content-between p-2'>
-        <button className='px-3 py-2' onClick={handleDarkMode}> <FaSun  /> </button>
+    <section data-bs-theme={`${ darkMode? 'dark' : 'light'}`} className={`h-100 min-vh-100 lg:h-screen d-flex flex-column justify-content-center  ${ darkMode? 'text-white bg-dark ' : 'text-dark bg-dark-subtle '} bg-gradient`}> 
+      <div className='w-100 d-flex justify-content-between align-items-center p-2'>
+        <div onClick={handleDarkMode} className={`border-1 rounded-2 toggler d-flex align-items-center ${darkMode ? 'justify-content-start ': 'justify-content-end'}`} style={{width:'50px', maxHeight:'20px'}}>
+          <button> {darkMode ? <HiMoon color='gray'  /> : <FaSun color='yellow' />} </button>
+        </div>
         <select name="country" id="select-country" className='col-10 col-md-5 col-lg-4 p-2' value={country} onChange={handleSelectValue} >
           <option disabled selected placeholder='Select Country' >
             Select Country
@@ -59,3 +63,4 @@ const Home = () => {
 }
 
 export default Home
+// ${ darkMode? 'bg-dark' : 'bg-dark-subtle '}
